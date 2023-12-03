@@ -71,7 +71,7 @@
 					<div
 						class="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 scale-75 rounded-full bg-[#171717] p-1 px-2 text-xs text-[#898989] md:scale-100"
 					>
-						Soon
+						Soon 🤫
 					</div>
 				</div>
 			</div>
