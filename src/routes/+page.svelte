@@ -80,6 +80,7 @@
 			<div class="flex flex-col gap-12 md:gap-8">
 				<ProjectItem
 					label={'FreeSpeech'}
+					url={'https://github.com/Merkie/freespeech'}
 					technologies={['typescript', 'svelte', 'tailwind', 'postgres', 'prisma']}
 				>
 					FreeSpeech is an open-source augmentative and alternative communication (AAC) web
@@ -87,16 +88,25 @@
 				</ProjectItem>
 				<ProjectItem
 					label={'GPT Cold Email'}
+					url={'https://github.com/Merkie/gpt-cold-email'}
 					technologies={['openai', 'typescript', 'svelte', 'tailwind', 'postgres', 'prisma']}
 				>
 					GPT Cold Email is an open-source web application that generates and sends cold emails
 					using OpenAI's suite of language models and standard SMTP requests.
 				</ProjectItem>
-				<ProjectItem label={'UULE'} technologies={['go']}>
+				<ProjectItem
+					url={'https://pkg.go.dev/github.com/merkie/uule-go'}
+					label={'UULE'}
+					technologies={['go']}
+				>
 					UULE is an open-source Go package that generates Google's UULE parameter for
 					programmatically searching Google from a specific location.
 				</ProjectItem>
-				<ProjectItem label={'BrightData SDK'} technologies={['go']}>
+				<ProjectItem
+					url={'https://pkg.go.dev/github.com/merkie/brightdata-sdk-go'}
+					label={'BrightData SDK'}
+					technologies={['go']}
+				>
 					BrightData SDK is an open-source Go package that provides a simple interface for
 					programmatically using BrightData's proxies and APIs.
 				</ProjectItem>

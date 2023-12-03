@@ -55,11 +55,12 @@
 
 	export let label: string;
 	export let technologies: TechnologyKeys[];
+	export let url: string;
 </script>
 
 <div class="flex flex-col gap-4 md:flex-row md:gap-8">
 	<div class="flex flex-col gap-4 md:w-[200px]">
-		<p class="whitespace-nowrap">{label}</p>
+		<a href={url} target="_blank" class="whitespace-nowrap hover:underline">{label}</a>
 		<div class="flex flex-wrap items-center gap-3">
 			{#each technologies as technology}
 				<div class="group relative cursor-pointer">
