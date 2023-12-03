@@ -7,7 +7,7 @@
 	<title>Archer Calder</title>
 </svelte:head>
 
-<main class="flex h-screen flex-col items-center pt-12 md:pt-28">
+<main class="flex h-screen flex-col items-center py-12 md:py-28">
 	<div class="flex w-[80%] max-w-[750px] flex-col">
 		<div class="flex flex-col gap-8 md:flex-row md:gap-16">
 			<div class="flex flex-col">
