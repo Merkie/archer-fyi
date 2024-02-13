@@ -1,6 +1,7 @@
 <script lang="ts">
 	import DividerWithLabel from '~/components/DividerWithLabel.svelte';
 	import ProjectItem from '~/components/ProjectItem.svelte';
+	import NewsLink from '~/components/NewsLink.svelte';
 </script>
 
 <svelte:head>
@@ -11,6 +12,7 @@
 	<div class="flex w-[80%] max-w-[750px] flex-col">
 		<div class="flex flex-col gap-8 md:flex-row md:gap-16">
 			<div class="flex flex-col">
+				<img src="/me.png" class="mb-4 max-w-[200px] rounded-full" alt="" />
 				<p>Archer Calder</p>
 				<p class="mb-4 whitespace-nowrap text-sm text-[#434343]">Full-Stack Web Developer</p>
 				<a
@@ -34,46 +36,49 @@
 			</div>
 			<div class="flex flex-col gap-2 font-light">
 				<p>
-					Hey there 👋 I'm a full-stack web developer from Houston. I'm currently working at <a
-						href="https://drinkflowater.com/"
+					Hey there 👋 I'm Archer, a passionate full-stack web developer based in Houston. At <a
+						href="https://huzi.ai/?auth=Login"
 						class="underline"
-						target="_blank">FloWater</a
-					>, developing the next generation of AI-powered marketing tools.
+						target="_blank">Huzi</a
+					>, I'm at the forefront of developing the next generation of AI-powered real estate
+					software, aimed at optimizing transactions, enhancing property and market analysis, and
+					simplifying property management.
 				</p>
+
 				<p>
 					I created and maintain <a
 						href="https://www.freespeechaac.com/"
 						class="underline"
 						target="_blank">FreeSpeech</a
 					>, an open-source augmentative and alternative communication (AAC) web application for
-					people who are non-verbal.
+					people who are non-verbal. (I also have a few more open-source projects I maintain and
+					contribute to)
 				</p>
 			</div>
 		</div>
-		<DividerWithLabel label={'Media'}>
-			<div class="flex items-center justify-between">
-				<a
-					href="https://www.cnn.com/2021/12/19/us/texas-teen-freespeech-app/index.html"
-					target="_blank"
-					class="opacity-40 transition-opacity hover:opacity-100"
-				>
-					<img class="h-[30px] sm:h-[40px] md:h-[50px]" src="/cnn.png" alt="CNN" />
-				</a>
-				<a
-					href="https://www.bbc.com/news/av/disability-57515272"
-					target="_blank"
-					class="opacity-40 transition-opacity hover:opacity-100"
-				>
-					<img class="h-[30px] sm:h-[40px] md:h-[50px]" src="/bbc.png" alt="BBC" />
-				</a>
-				<div class="relative">
-					<img class="h-[30px] opacity-40 sm:h-[40px] md:h-[50px]" src="/github.png" alt="GitHub" />
-					<div
-						class="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 scale-75 rounded-full bg-[#171717] p-1 px-2 text-xs text-[#898989] md:scale-100"
-					>
-						Soon 🤫
-					</div>
-				</div>
+		<DividerWithLabel label={'Published Media'}>
+			<div class="flex flex-col gap-8">
+				<NewsLink
+					href={'https://github.com/readme/featured/open-source-aac'}
+					title={'Coding accessibility: How Della found her voice with open source AAC '}
+					site={'github'}
+					date={'Dec 3, 2023'}
+					author={'Mike Melanson'}
+				/>
+				<NewsLink
+					href={'https://www.cnn.com/2021/12/19/us/texas-teen-freespeech-app/index.html'}
+					title={'A Texas teen couldn’t speak with his sister, so he created an app to give her a voice'}
+					site={'cnn'}
+					date={'Dec 19, 2021'}
+					author={'Sophie Tremblay'}
+				/>
+				<NewsLink
+					href={'https://www.bbc.com/news/av/disability-57515272'}
+					title={'How a US teen developed an app to help his sister talk'}
+					site={'bbc'}
+					date={'Jun 30, 2021'}
+					author={'Harry Bligh and Dianne King'}
+				/>
 			</div>
 		</DividerWithLabel>
 		<DividerWithLabel label={'Projects'}>
