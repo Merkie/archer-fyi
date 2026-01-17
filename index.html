@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="static/favicon.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Archer Calder - Full-Stack Web Developer based in Houston. Creator of FreeSpeech, an open-source AAC application." />
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="static/me.webp" as="image" />
+    <link rel="preload" href="styles.css" as="style" />
+
+    <!-- Fonts with display swap for faster text rendering -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Icons loaded async to not block render -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" media="print" onload="this.media='all'" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Archer Calder</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="profile">
+                    <img src="static/me.webp" class="profile-img" alt="Archer Calder" />
+                    <p class="name">Archer Calder</p>
+                    <p class="title">Full-Stack Web Developer</p>
+                    <a href="https://github.com/Merkie" target="_blank" rel="noopener" class="social-link">
+                        <i class="bi bi-github"></i>
+                        <span>Github</span>
+                        <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/archer-calder/" target="_blank" rel="noopener" class="social-link">
+                        <i class="bi bi-linkedin"></i>
+                        <span>LinkedIn</span>
+                        <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                </div>
+                <div class="bio">
+                    <p>
+                        Hey there 👋 I'm Archer, a passionate full-stack web developer based in Houston. At
+                        <a href="https://huzi.ai/?auth=Login" target="_blank" rel="noopener">Huzi</a>,
+                        I'm at the forefront of developing the next generation of AI-powered real estate
+                        software, aimed at optimizing transactions, enhancing property and market analysis, and
+                        simplifying property management.
+                    </p>
+                    <p>
+                        I created and maintain
+                        <a href="https://www.freespeechaac.com/" target="_blank" rel="noopener">FreeSpeech</a>,
+                        an open-source augmentative and alternative communication (AAC) web application for
+                        people who are non-verbal. (I also have a few more open-source projects I maintain and
+                        contribute to)
+                    </p>
+                </div>
+            </div>
+
+            <!-- Published Media Section -->
+            <div class="section">
+                <div class="section-label">Published Media</div>
+                <div class="news-list">
+                    <a href="https://github.com/readme/featured/open-source-aac" target="_blank" rel="noopener" class="news-link">
+                        <img class="news-logo" src="static/github.webp" alt="GitHub logo" loading="lazy" />
+                        <p class="news-title">
+                            Coding accessibility: How Della found her voice with open source AAC
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </p>
+                        <div class="news-meta">
+                            <div class="news-badge">Mike Melanson</div>
+                            <div class="news-badge">Dec 3, 2023</div>
+                        </div>
+                    </a>
+                    <a href="https://www.cnn.com/2021/12/19/us/texas-teen-freespeech-app/index.html" target="_blank" rel="noopener" class="news-link">
+                        <img class="news-logo" src="static/cnn.webp" alt="CNN logo" loading="lazy" />
+                        <p class="news-title">
+                            A Texas teen couldn't speak with his sister, so he created an app to give her a voice
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </p>
+                        <div class="news-meta">
+                            <div class="news-badge">Sophie Tremblay</div>
+                            <div class="news-badge">Dec 19, 2021</div>
+                        </div>
+                    </a>
+                    <a href="https://www.bbc.com/news/av/disability-57515272" target="_blank" rel="noopener" class="news-link">
+                        <img class="news-logo" src="static/bbc.webp" alt="BBC logo" loading="lazy" />
+                        <p class="news-title">
+                            How a US teen developed an app to help his sister talk
+                            <i class="bi bi-box-arrow-up-right"></i>
+                        </p>
+                        <div class="news-meta">
+                            <div class="news-badge">Harry Bligh and Dianne King</div>
+                            <div class="news-badge">Jun 30, 2021</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div class="section">
+                <div class="section-label">Projects</div>
+                <div class="projects-list">
+                    <div class="project">
+                        <div class="project-header">
+                            <a href="https://github.com/Merkie/freespeech" target="_blank" rel="noopener" class="project-name">FreeSpeech</a>
+                            <div class="tech-icons">
+                                <div class="tech-icon" data-tooltip="TypeScript">
+                                    <img src="static/typescript.webp" alt="TypeScript" loading="lazy" style="height: 25px" />
+                                </div>
+                                <div class="tech-icon" data-tooltip="SvelteKit">
+                                    <img src="static/svelte.webp" alt="SvelteKit" loading="lazy" style="height: 25px" />
+                                </div>
+                                <div class="tech-icon" data-tooltip="Tailwind CSS">
+                                    <img src="static/tailwind.webp" alt="Tailwind CSS" loading="lazy" style="height: 15px" />
+                                </div>
+                                <div class="tech-icon" data-tooltip="PostgreSQL">
+                                    <img src="static/postgres.webp" alt="PostgreSQL" loading="lazy" style="height: 25px" />
+                                </div>
+                                <div class="tech-icon" data-tooltip="Prisma">
+                                    <img src="static/prisma.webp" alt="Prisma" loading="lazy" style="height: 25px" />
+                                </div>
+                            </div>
+                        </div>
+                        <p class="project-desc">
+                            FreeSpeech is an open-source augmentative and alternative communication (AAC) web
+                            application for people who are non-verbal.
+                        </p>
+                    </div>
+                    <div class="project">
+                        <div class="project-header">
+                            <a href="https://github.com/Merkie/gpt-cold-email" target="_blank" rel="noopener" class="project-name">GPT Cold Email</a>
+                            <div class="tech-icons">
+                                <div class="tech-icon" data-tooltip="OpenAI">
+                                    <img src="static/openai.webp" alt="OpenAI" loading="lazy" style="height: 25px" />
+                                </div>
+                                <div class="tech-icon" data-tooltip="TypeScript">
+                                    <img src="static/typescript.webp" alt="TypeScript" loading="lazy" style="height: 25px" />
+                                </div>
+                                <div class="tech-icon" data-tooltip="SvelteKit">
+                                    <img src="static/svelte.webp" alt="SvelteKit" loading="lazy" style="height: 25px" />
+                                </div>
+                                <div class="tech-icon" data-tooltip="Tailwind CSS">
+                                    <img src="static/tailwind.webp" alt="Tailwind CSS" loading="lazy" style="height: 15px" />
+                                </div>
+                                <div class="tech-icon" data-tooltip="PostgreSQL">
+                                    <img src="static/postgres.webp" alt="PostgreSQL" loading="lazy" style="height: 25px" />
+                                </div>
+                                <div class="tech-icon" data-tooltip="Prisma">
+                                    <img src="static/prisma.webp" alt="Prisma" loading="lazy" style="height: 25px" />
+                                </div>
+                            </div>
+                        </div>
+                        <p class="project-desc">
+                            GPT Cold Email is an open-source web application that generates and sends cold emails
+                            using OpenAI's suite of language models and standard SMTP requests.
+                        </p>
+                    </div>
+                    <div class="project">
+                        <div class="project-header">
+                            <a href="https://pkg.go.dev/github.com/merkie/uule-go" target="_blank" rel="noopener" class="project-name">UULE</a>
+                            <div class="tech-icons">
+                                <div class="tech-icon" data-tooltip="Go">
+                                    <img src="static/go.webp" alt="Go" loading="lazy" style="height: 20px" />
+                                </div>
+                            </div>
+                        </div>
+                        <p class="project-desc">
+                            UULE is an open-source Go package that generates Google's UULE parameter for
+                            programmatically searching Google from a specific location.
+                        </p>
+                    </div>
+                    <div class="project">
+                        <div class="project-header">
+                            <a href="https://pkg.go.dev/github.com/merkie/brightdata-sdk-go" target="_blank" rel="noopener" class="project-name">BrightData SDK</a>
+                            <div class="tech-icons">
+                                <div class="tech-icon" data-tooltip="Go">
+                                    <img src="static/go.webp" alt="Go" loading="lazy" style="height: 20px" />
+                                </div>
+                            </div>
+                        </div>
+                        <p class="project-desc">
+                            BrightData SDK is an open-source Go package that provides a simple interface for
+                            programmatically using BrightData's proxies and APIs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Archer Calder</p>
+            <p class="footer-location">That's it! You made it to the end</p>
+        </div>
+    </footer>
+</body>
+</html>
