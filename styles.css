@@ -53,7 +53,9 @@ main {
 }
 
 .profile-img {
-    max-width: 200px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 9999px;
     margin-bottom: 1rem;
 }
@@ -64,7 +66,7 @@ main {
 
 .title {
     font-size: 0.875rem;
-    color: #434343;
+    color: #737373;
     white-space: nowrap;
     margin-bottom: 1rem;
 }
@@ -120,7 +122,7 @@ main {
     padding-right: 1rem;
     font-size: 0.875rem;
     font-weight: 300;
-    color: #434343;
+    color: #737373;
 }
 
 /* News Links */
@@ -150,6 +152,8 @@ main {
 
 .news-logo {
     height: 30px;
+    width: auto;
+    object-fit: contain;
     flex-shrink: 0;
 }
 
@@ -255,6 +259,8 @@ main {
 }
 
 .tech-icon img {
+    height: 25px;
+    width: auto;
     opacity: 0.4;
     transition: opacity 0.2s, transform 0.2s;
 }
@@ -303,7 +309,7 @@ footer {
     align-items: center;
     gap: 0.5rem;
     font-size: 0.875rem;
-    color: #434343;
+    color: #737373;
 }
 
 .footer-location {
